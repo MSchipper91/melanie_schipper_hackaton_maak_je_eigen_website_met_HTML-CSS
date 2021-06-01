@@ -1,0 +1,284 @@
+html, body {
+    background-color: #C9E4EF;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container-index {
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 1fr 1fr 20px ;
+    grid-template-areas: 
+    ". n n n n ."
+    ". h h h h ."
+    ". m m m m ."
+    ". f f f f ."
+    ;
+}
+
+.container-about {
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 1fr 1fr 20px;
+    grid-template-areas: 
+    " . n n n n ."
+    " . h h h h ."
+    " . m m m m ."
+    " . f f f f ."
+    ;
+}
+
+.container-diet {
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 1fr 1fr 20px;
+    grid-template-areas: 
+    ". n n n n ."
+    ". h h h h ."
+    ". . . . . ."
+    ". m m m m ."
+    ". f f f f ."
+    ;
+}
+
+.container-nieuwsbrief {
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 1fr 1fr 20px;
+    grid-template-areas: 
+    " . n n n n ."
+    " . h h h h ."
+    " . m m m m ."
+    " . f f f f ."
+    ;
+}
+
+.navbar {
+    display: inline;
+    grid-area: n;
+    background-color: #EAA99F;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EAA99F;
+    border: #7650B7 2px solid;
+}
+
+li a {
+    display: inline;
+    float: left;
+    padding: 9px;
+    font-size: 18px;
+}
+
+a {
+    display: block;
+    font-family: 'Dosis', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    margin: 0;
+    color: #7650B7;
+    background-color: #EAA99F;
+}
+
+a:hover {
+    background-color: #CAE8AD;
+}
+
+header {
+    grid-area: h;
+}
+
+h1 {
+    color: #CAE8AD;
+    font-family: 'Dosis', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+}
+
+
+h2 {
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: #7650B7;
+    text-align: center;
+}
+
+.pnb {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+}
+
+.paragraph {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    width: 350px;
+}
+
+main {
+    grid-area: m;
+}
+
+.containermain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    border: 2px #89C2FB solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px 0;
+    padding: 5px 5px;
+}
+
+label {
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    background-color: #EAA99F;
+    color: #7650B7;
+    border: none;
+    padding: 12px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #CAE8AD;
+}
+
+.link-aflevering {
+    margin-bottom: 20px;
+}
+
+.roundedimage {
+    border-radius: 50%;
+    width: 250px;
+    border: #89C2FB 2px solid;
+    margin: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 10px dotted #EAA99F;
+    width: 100px;
+    background-color: #C9E4EF;
+    
+}
+
+footer {
+    grid-area: f;
+    background-color: #CAE8AD; 
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+}
+
+.gerritfoot {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #CAE8AD;
+    border: #89C2FB 2px solid;
+}
+
+.footerimage {
+    margin-left: 80px;
+}
+
+@media (min-width: 768px) {
+
+    .gerritfoot {
+        justify-content: center;
+    }
+
+    .footerimage {
+        margin-left: 20px;
+    }
+    
+}
+
+@media (min-width: 992px) {
+
+   h1 {
+       font-size: 60px;
+   }
+
+   h2 {
+       font-size: 40px;
+       margin-top: 70px;
+   }
+
+   .roundedimage {
+       width: 350px;
+       margin: 50px;
+   }
+
+   .paragraph {
+        width: 600px;
+        font-size: 20px;
+   }
+
+   .pnb {
+       font-size: 20px;
+   }
+
+   a {
+        font-size: 25px;
+   }
+
+   button {
+       font-size: 17px;
+   }
+
+   .hoofdfoto {
+       width: 100%;
+   }
+
+}
+
+@media (min-width: 1200px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hoofdfoto {
+        justify-content: center;
+        border-radius: 50%;
+        border: #89C2FB 2px solid;
+        margin-top: 40px;
+        width: 700px;
+    }
+    
+    .container-index {
+        grid-template-columns: 70px 1fr 1fr 1fr 1fr 70px ;
+    }
+    
+    .container-about {
+        grid-template-columns: 70px 1fr 1fr 1fr 1fr 70px;
+    }
+    
+    .container-diet {
+        grid-template-columns: 70px 1fr 1fr 1fr 1fr 70px;
+    }
+    
+    .container-nieuwsbrief {
+        grid-template-columns: 70px 1fr 1fr 1fr 1fr 70px;
+    }
+}
+
+
+

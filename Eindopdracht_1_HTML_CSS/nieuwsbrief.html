@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Nieuwsbrief </title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <div class="container-nieuwsbrief">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">De Annanas</a></li>
+                <li><a href="about.html">Over Gerrit</a></li>
+                <li><a href="diet.html">Gerrit's dieet</a></li>
+                <li><a href="nieuwsbrief.html">Nieuwsbrief</a></li>    
+            </ul>
+        </nav>
+
+        <header>
+            <img class="hoofdfoto" src="images/gerritnieuwsbrief.jpg" alt="Gerrit en Spongebob">
+        </header>
+        
+        <main>
+            <h2>Wil je wekelijks de nieuwsbrief ontvangen?</h2>
+            <p class="pnb">Meld je hieronder aan</p>
+
+            <form name="aanmelden" method="POST" data-netlify="true">
+                <p>
+                    <label>Naam: <br><input type="text" name="name"></label>
+                </p>
+                <p>
+                    <label>Leeftijd: <br><input type="number" id="age" min="1" max="150" name="age"></label>
+                </p> 
+                <p>
+                    <label>Geboortedatum: <br><input type="date" name="date-of-birth"></label>
+                </p>
+                <p>
+                    <label>E-mail:<br><input type="email" name="email"></label>
+                </p>   
+                <p>
+                    <label>Geslacht:</label>
+                </p>
+                <p>    
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Man</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Vrouw</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Anders</label>
+                </p>
+                <p>
+                    <label>Het mooiste aan Gerrit vind ik:</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="ogen" name="mooiste" value="ogen">
+                    <label for="ogen">Zijn ogen</label><br>
+                    <input type="checkbox" id="slakkenhuis" name="mooiste" value="slakkenhuis">
+                    <label for="slakkenhuis">Zijn slakkenhuis</label><br>
+                    <input type="checkbox" id="lijf" name="mooiste" value="lijf">
+                    <label for="lijf">Zijn lijf</label><br>
+                    <input type="checkbox" id="kleuren" name="mooiste" value="kleuren">
+                    <label for="kleuren">Zijn kleuren</label>
+                </p>
+                <p>
+                    <label for="color">Lievelings kleur:</label><br>
+                    <input type="color" id="color" name="favorite-color" value="color">
+                </p>
+                <p>
+                    <label>Ik houd van Gerrit omdat:</label><br>
+                    <textarea name="bio"></textarea>
+                </p>
+                <p>
+                    <label>Upload een foto van jezelf:</label><br>
+                    <input type="file" name="foto-van-jezelf">
+                </p>
+                <p>
+                    <label>Jouw website:</label><br>
+                    <input type="url" name="website-url">
+                </p>
+                <p>
+                    <button type="reset">Opnieuw</button>
+                </p>
+                <p>
+                    <button type="submit">Aanmelden</button>
+                </p>
+            
+            </form>
+        </main>
+
+        <footer>
+            <div class="gerritfoot">
+                <p class="footertext">© MissMonstrosity 2021</p>
+                <img class="footerimage" src="images/gerritfooter.png" alt="Lachende Gerrit" style="width: 60px;">
+            </div>     
+        </footer>
+
+    </div>
+    </body>
+</html>
